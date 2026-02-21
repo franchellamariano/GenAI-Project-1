@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tiny Horoscope</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <main class="container">
+      <div class="layout">
+        <section class="panel">
+          <h1>Tiny Horoscope</h1>
+
+          <form id="horoscopeForm">
+            <label>
+              Your name
+              <input id="name" name="name" type="text" placeholder="e.g. Alex">
+            </label>
+
+            <label>
+              Birth date
+              <input id="birthday" name="birthday" type="date" required>
+            </label>
+
+            <label>
+              Birth time
+              <input id="birth_time" name="birth_time" type="time">
+            </label>
+
+            <label>
+              Birth location (city)
+              <input id="birth_location" name="birth_location" type="text" placeholder="e.g. London" list="location-list" autocomplete="off">
+              <datalist id="location-list"></datalist>
+            </label>
+
+            <label>
+              Tone
+              <select id="tone" name="tone">
+                <option value="funny" selected>Funny</option>
+                <option value="serious">Serious</option>
+                <option value="inspirational">Inspirational</option>
+              </select>
+            </label>
+
+            <button type="submit">Generate Horoscope</button>
+          </form>
+
+          <div id="resultArea" class="result">Your horoscope will appear here.</div>
+        </section>
+
+        <aside class="chart-panel" aria-live="polite">
+          <h2>Birth Chart</h2>
+          <p class="chart-subtitle">Zodiac houses based on your birth info.</p>
+          <ol id="chartList" class="chart-list">
+            <li>House 1: --</li>
+            <li>House 2: --</li>
+            <li>House 3: --</li>
+            <li>House 4: --</li>
+            <li>House 5: --</li>
+            <li>House 6: --</li>
+            <li>House 7: --</li>
+            <li>House 8: --</li>
+            <li>House 9: --</li>
+            <li>House 10: --</li>
+            <li>House 11: --</li>
+            <li>House 12: --</li>
+          </ol>
+        </aside>
+      </div>
+
+      <section class="moon-panel" aria-live="polite">
+        <h3>Moon Phase (Today)</h3>
+        <div class="moon-row">
+          <div id="moonIcon" class="moon" aria-hidden="true"></div>
+          <div class="moon-text">
+            <div id="moonValue" class="moon-value">--</div>
+            <div id="moonTitle" class="moon-title">--</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
