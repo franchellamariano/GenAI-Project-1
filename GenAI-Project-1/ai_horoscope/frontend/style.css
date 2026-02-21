@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Space+Grotesk:wght@400;600&display=swap');
+
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:'Space Grotesk',sans-serif;color:#2a1b22;background:radial-gradient(1200px 800px at 15% -10%,#ffd3e4 0%,#ffc0d6 35%,#f7a8c4 60%,#f59cb8 100%);overflow-x:hidden}
+
+/* Pixelated stars layer */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;background:
+linear-gradient(90deg,rgba(245,245,245,.8) 2px,transparent 2px) 0 0/120px 120px,
+linear-gradient(0deg,rgba(245,245,245,.8) 2px,transparent 2px) 0 0/120px 120px,
+linear-gradient(90deg,rgba(245,245,245,.6) 2px,transparent 2px) 20px 40px/90px 90px,
+linear-gradient(0deg,rgba(245,245,245,.6) 2px,transparent 2px) 20px 40px/90px 90px,
+linear-gradient(90deg,rgba(245,245,245,.5) 2px,transparent 2px) 10px 10px/70px 70px,
+linear-gradient(0deg,rgba(245,245,245,.5) 2px,transparent 2px) 10px 10px/70px 70px;
+animation:star-drift 30s linear infinite;opacity:.85;mix-blend-mode:screen}
+
+/* Pixelated planet outlines layer */
+body::after{content:"";position:fixed;inset:-10% -10% -10% -10%;pointer-events:none;background:
+radial-gradient(circle at 15% 25%,transparent 32px,rgba(220,220,220,.7) 33px,rgba(220,220,220,.7) 36px,transparent 37px),
+radial-gradient(circle at 80% 20%,transparent 48px,rgba(220,220,220,.6) 49px,rgba(220,220,220,.6) 52px,transparent 53px),
+radial-gradient(circle at 70% 75%,transparent 60px,rgba(220,220,220,.6) 61px,rgba(220,220,220,.6) 64px,transparent 65px),
+radial-gradient(circle at 30% 85%,transparent 40px,rgba(220,220,220,.7) 41px,rgba(220,220,220,.7) 44px,transparent 45px),
+linear-gradient(90deg,rgba(220,220,220,.35) 2px,transparent 2px) 0 0/140px 140px,
+linear-gradient(0deg,rgba(220,220,220,.35) 2px,transparent 2px) 0 0/140px 140px;
+animation:planet-float 60s ease-in-out infinite;opacity:.8}
+
+@keyframes star-drift{0%{transform:translate(0,0)}50%{transform:translate(-30px,-25px)}100%{transform:translate(0,0)}}
+@keyframes planet-float{0%{transform:translate(0,0)}50%{transform:translate(-35px,25px)}100%{transform:translate(0,0)}}
+
+ .container{max-width:980px;margin:48px auto;padding:20px}
+.layout{display:flex;gap:20px;align-items:flex-start}
+.panel{flex:1;background:rgba(255,255,255,.78);border:1px solid rgba(255,255,255,.6);border-radius:16px;backdrop-filter:blur(6px);box-shadow:0 10px 35px rgba(186,69,111,.18);padding:20px}
+.chart-panel{width:320px;background:rgba(255,209,226,.85);border:1px solid rgba(255,255,255,.7);border-radius:16px;box-shadow:0 10px 35px rgba(186,69,111,.18);padding:18px;position:sticky;top:24px}
+.chart-panel h2{font-family:'Fraunces',serif;font-size:20px;margin:0 0 6px}
+.chart-subtitle{margin:0 0 12px;font-size:12px;color:#6a4b5a}
+.chart-list{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.chart-list li{background:rgba(255,255,255,.75);border:1px solid #f0c6d5;border-radius:10px;padding:8px 10px;font-size:13px}
+.moon-panel{margin-top:18px;padding:16px;background:rgba(255,255,255,.78);border:1px solid rgba(255,255,255,.7);border-radius:16px;box-shadow:0 10px 35px rgba(186,69,111,.18)}
+.moon-panel h3{margin:0 0 10px;font-size:14px;letter-spacing:.6px;text-transform:uppercase;color:#6a4b5a}
+.moon-row{display:flex;gap:12px;align-items:center}
+.moon{width:44px;height:44px;border-radius:50%;background:#f4f4f4;position:relative;overflow:hidden;box-shadow:inset 0 0 0 2px rgba(220,220,220,.7)}
+.moon::after{content:"";position:absolute;inset:0;border-radius:50%;background:#2a1b22;transform:translateX(var(--moon-offset,0px))}
+.moon-text{display:flex;flex-direction:column;gap:2px}
+.moon-value{font-weight:600;font-size:13px}
+.moon-title{font-size:12px;color:#6a4b5a}
+h1{font-family:'Fraunces',serif;font-size:28px;margin:0 0 14px}
+form{display:flex;flex-direction:column;gap:12px}
+label{display:flex;flex-direction:column;font-size:14px}
+input[type=date],input[type=time],input[type=text],select{padding:10px;border:1px solid #e7b7c9;border-radius:8px;background:#fff;outline:none}
+button{padding:12px 16px;border:0;border-radius:10px;background:#e25787;color:#fff;cursor:pointer;font-weight:600;transition:transform .15s ease,box-shadow .15s ease}
+button:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(226,87,135,.35)}
+.result{margin-top:16px;padding:14px;border-radius:10px;background:rgba(255,255,255,.9);border:1px solid #f0c6d5;min-height:56px}
+.astro-summary{margin:8px 0 0;font-size:12px;color:#6a4b5a}
+
+@media (max-width: 900px){
+	.layout{flex-direction:column}
+	.chart-panel{width:100%;position:static}
+}

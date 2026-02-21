@@ -1,0 +1,25 @@
+INFO:     Started server process [16690]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:51308 - "POST /horoscope HTTP/1.1" 502 Bad Gateway
+INFO:     127.0.0.1:55161 - "GET /?name=Franchella++Mariano&birthDate=2026-02-17&birthTime=15%3A15&birthLocation=London HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55161 - "GET /style.css HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55161 - "GET /script.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55509 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55509 - "GET /style.css HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55510 - "GET /script.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55516 - "GET /?name=Franchella++Mariano&birthday=2026-02-17&birth_time=15%3A32&birth_location=new+london&tone=funny HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55516 - "GET /style.css HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55516 - "GET /script.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55517 - "GET /?name=&birthday=2009-01-04&birth_time=&birth_location=&tone=funny HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55517 - "GET /style.css HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55519 - "GET /script.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55567 - "POST /horoscope HTTP/1.1" 502 Bad Gateway
+INFO:     127.0.0.1:55657 - "POST /horoscope HTTP/1.1" 502 Bad Gateway
+INFO:     127.0.0.1:55679 - "POST /horoscope HTTP/1.1" 502 Bad Gateway
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16690]
+/var/folders/w8/jm8_szn97c3c62dwv61w986w0000gn/T/tmp2qu4808c: line 3: 16690 Terminated: 15          python -m uvicorn backend.main:app --port 8000 --host 127.0.0.1
