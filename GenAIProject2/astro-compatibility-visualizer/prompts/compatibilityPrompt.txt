@@ -1,0 +1,4 @@
+# compatibilityPrompt.txt
+# Prompt template for OpenAI API to generate compatibility explanations.
+
+Describe the astrological compatibility between two individuals based on their birth charts and planetary aspects.

@@ -1,0 +1,90 @@
+{
+  "Sun-Sun": {
+    "compatibilityLevel": "medium",
+    "explanation": "Sun-Sun aspects reflect core identity and ego. Compatibility depends on mutual respect and shared values.",
+    "romanticMeaning": "Can create a strong sense of partnership, but may lead to ego clashes if not balanced.",
+    "friendshipMeaning": "Encourages mutual support and leadership, but competition can arise.",
+    "workMeaning": "Works well if both respect each other's authority; potential for power struggles.",
+    "evals": "Balanced leadership, moderate synergy, possible rivalry."
+  },
+  "Sun-Moon": {
+    "compatibilityLevel": "high",
+    "explanation": "Sun-Moon aspects blend conscious will with emotional needs, fostering understanding and harmony.",
+    "romanticMeaning": "Creates emotional security and deep attraction; one partner supports the other's goals.",
+    "friendshipMeaning": "Promotes empathy and loyalty; friends feel comfortable sharing personal matters.",
+    "workMeaning": "Excellent for teamwork; one leads, the other supports, creating balance.",
+    "evals": "Strong emotional support, high synergy, nurturing dynamic."
+  },
+  "Moon-Moon": {
+    "compatibilityLevel": "high",
+    "explanation": "Moon-Moon aspects indicate emotional resonance and shared instincts.",
+    "romanticMeaning": "Deep emotional connection and mutual understanding; nurturing relationship.",
+    "friendshipMeaning": "Friends feel safe and understood; strong emotional bond.",
+    "workMeaning": "Collaboration flows easily; both are sensitive to each other's needs.",
+    "evals": "Excellent emotional rapport, intuitive understanding, harmonious teamwork."
+  },
+  "Moon-Venus": {
+    "compatibilityLevel": "high",
+    "explanation": "Moon-Venus aspects enhance affection, comfort, and appreciation of beauty.",
+    "romanticMeaning": "Romantic attraction is strong; partners feel cherished and emotionally fulfilled.",
+    "friendshipMeaning": "Creates warmth and kindness; friends enjoy pleasant times together.",
+    "workMeaning": "Cooperation is smooth; both value harmony and aesthetics in their work.",
+    "evals": "Affectionate bond, creative partnership, emotional comfort."
+  },
+  "Venus-Mars": {
+    "compatibilityLevel": "medium",
+    "explanation": "Venus-Mars aspects combine desire and action, fueling attraction and creative energy.",
+    "romanticMeaning": "Passionate and dynamic relationship; can be exciting but sometimes volatile.",
+    "friendshipMeaning": "Encourages fun and adventure; may lead to competitiveness.",
+    "workMeaning": "Good for creative projects; energy and ideas flow, but may clash over direction.",
+    "evals": "Energetic chemistry, creative tension, potential volatility."
+  },
+  "Venus-Venus": {
+    "compatibilityLevel": "high",
+    "explanation": "Venus-Venus aspects reflect shared values, tastes, and approach to relationships.",
+    "romanticMeaning": "Partners enjoy similar pleasures and romantic styles; harmony is easy.",
+    "friendshipMeaning": "Friends appreciate each other's company and share interests.",
+    "workMeaning": "Collaboration is pleasant; both value fairness and beauty in their work.",
+    "evals": "Shared values, harmonious relationships, easy collaboration."
+  },
+  "Mars-Mars": {
+    "compatibilityLevel": "low",
+    "explanation": "Mars-Mars aspects highlight drive, ambition, and conflict resolution styles.",
+    "romanticMeaning": "Can lead to arguments and power struggles; passion may turn to conflict.",
+    "friendshipMeaning": "Competitive energy; friends may push each other, sometimes too hard.",
+    "workMeaning": "Potential for clashes; both want to lead and may struggle to cooperate.",
+    "evals": "High tension, competitive drive, frequent conflict."
+  },
+  "Mercury-Mercury": {
+    "compatibilityLevel": "high",
+    "explanation": "Mercury-Mercury aspects indicate intellectual rapport and communication ease.",
+    "romanticMeaning": "Partners understand each other well; conversations are stimulating.",
+    "friendshipMeaning": "Great for sharing ideas and learning together; few misunderstandings.",
+    "workMeaning": "Excellent for teamwork; communication is clear and effective.",
+    "evals": "Clear communication, intellectual synergy, productive teamwork."
+  },
+  "Mercury-Venus": {
+    "compatibilityLevel": "medium",
+    "explanation": "Mercury-Venus aspects blend intellect with affection, supporting pleasant exchanges.",
+    "romanticMeaning": "Flirtation and sweet talk; partners express love easily.",
+    "friendshipMeaning": "Friendly banter and enjoyable conversations.",
+    "workMeaning": "Good for creative collaboration; ideas are shared with kindness.",
+    "evals": "Pleasant exchanges, creative communication, moderate synergy."
+  },
+  "Sun-Venus": {
+    "compatibilityLevel": "high",
+    "explanation": "Sun-Venus aspects foster attraction, admiration, and mutual appreciation.",
+    "romanticMeaning": "Strong romantic chemistry; partners admire and support each other.",
+    "friendshipMeaning": "Easy friendship; both enjoy spending time together.",
+    "workMeaning": "Collaboration is harmonious; both value positive relationships.",
+    "evals": "Mutual admiration, positive chemistry, harmonious teamwork."
+  },
+  "Moon-Mars": {
+    "compatibilityLevel": "medium",
+    "explanation": "Moon-Mars aspects combine emotion and action, creating dynamic interactions.",
+    "romanticMeaning": "Attraction is intense; can be passionate but sometimes turbulent.",
+    "friendshipMeaning": "Encourages motivation and activity; may lead to emotional disagreements.",
+    "workMeaning": "Good for energetic teamwork; may need to manage emotional reactions.",
+    "evals": "Dynamic energy, emotional motivation, occasional turbulence."
+  }
+}

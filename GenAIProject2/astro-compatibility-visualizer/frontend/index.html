@@ -1,0 +1,102 @@
+<!-- index.html -->
+<!-- Main HTML file for the Astro Compatibility Visualizer web app. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astro Compatibility Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Astro Compatibility Visualizer</h1>
+  <!-- Compatibility Input Form -->
+  <form id="compatibility-form">
+    <fieldset>
+      <legend>Person 1</legend>
+      <!-- Name -->
+      <label for="person1-name">Name:</label>
+      <input type="text" id="person1-name" name="person1-name" required><br>
+      <!-- Birth Date -->
+      <label for="person1-birthdate">Birth Date:</label>
+      <input type="date" id="person1-birthdate" name="person1-birthdate" required><br>
+      <!-- Birth Time -->
+      <label for="person1-birthtime">Birth Time:</label>
+      <input type="time" id="person1-birthtime" name="person1-birthtime" required><br>
+      <!-- Birth Location -->
+      <label for="person1-location">Birth Location:</label>
+      <input type="text" id="person1-location" name="person1-location" required><br>
+    </fieldset>
+    <fieldset>
+      <legend>Person 2</legend>
+      <!-- Name -->
+      <label for="person2-name">Name:</label>
+      <input type="text" id="person2-name" name="person2-name" required><br>
+      <!-- Birth Date -->
+      <label for="person2-birthdate">Birth Date:</label>
+      <input type="date" id="person2-birthdate" name="person2-birthdate" required><br>
+      <!-- Birth Time -->
+      <label for="person2-birthtime">Birth Time:</label>
+      <input type="time" id="person2-birthtime" name="person2-birthtime" required><br>
+      <!-- Birth Location -->
+      <label for="person2-location">Birth Location:</label>
+      <input type="text" id="person2-location" name="person2-location" required><br>
+    </fieldset>
+    <!-- Calculate Compatibility Button -->
+    <button type="submit">Calculate Compatibility</button>
+  </form>
+
+  <!-- Compatibility Results Sections -->
+  <section id="compatibility-summary">
+    <!-- Compatibility Summary will be displayed here -->
+    <h2>Compatibility Summary</h2>
+    <div></div>
+  </section>
+    <section id="romantic-compatibility" class="result-card">
+      <h2>Romantic Compatibility</h2>
+      <div>No data available.</div>
+    </section>
+    <section id="friendship-compatibility" class="result-card">
+      <h2>Friendship Compatibility</h2>
+      <div>No data available.</div>
+    </section>
+    <section id="work-compatibility" class="result-card">
+      <h2>Work Compatibility</h2>
+      <div>No data available.</div>
+    </section>
+
+  <!-- Birth Chart Section -->
+  <section id="birth-charts">
+    <div class="birth-chart-card">
+      <h2>Person 1 Birth Chart</h2>
+      <div id="chartPerson1" class="astro-chart-list"></div>
+    </div>
+    <div class="birth-chart-card">
+      <h2>Person 2 Birth Chart</h2>
+      <div id="chartPerson2" class="astro-chart-list"></div>
+    </div>
+  </section>
+
+  <style>
+    .astro-chart-list {
+      padding: 12px 16px;
+      background: #f8fafd;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      min-height: 40px;
+      font-size: 1.08em;
+      box-shadow: 0 2px 8px #0001;
+    }
+    .astro-chart-list span {
+      display: block;
+      margin-bottom: 6px;
+      color: #2a5d9f;
+    }
+    .birth-chart-card {
+      margin-bottom: 18px;
+    }
+  </style>
+
+  <script src="script.js"></script>
+</body>
+</html>
